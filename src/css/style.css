@@ -1,0 +1,19 @@
+:root {
+  --fundo-principal: #050810;      
+  --fundo-secundario: #0a1128;    
+
+  --cor-destaque1: #0b1a4a;        
+  --cor-destaque1-claro: #123b8f;   
+
+  --cor-destaque2: #1e5fd6;        
+  --cor-destaque2-claro: #4a90f0;  
+
+  --cor-destaque3: #3bc9f0;
+  --cor-destaque3-claro: #7fe3ff;  
+
+  --texto-principal: #ffffff;
+  --texto-secundario: #eaf2ff; 
+           
+  --cinza-claro: #8a95ab;        
+  --cinza: #2a3350;        
+}
