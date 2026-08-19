@@ -31,8 +31,7 @@
 body {
     display: flex;
     flex-direction: column;
-    background-color: var(--fundo-principal);
-    overflow: hidden;      
+    background-color: var(--fundo-principal);     
 }
 
 header {
@@ -144,3 +143,65 @@ header nav ul li a:hover {
     mask-composite: intersect;
 }
 
+.secao-solucao,
+.secao-alvo,
+.secao-galeria,
+.secao-equipe,
+.secao-contato {
+    padding: 160px 4% 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;   
+}
+
+.solucao-titulo,
+.alvo-titulo,
+.galeria-titulo,
+.equipe-titulo,
+.contato-titulo {
+    font-family: var(--font);
+    font-weight: 700;
+    font-size: 7rem;
+    color: var(--texto-principal);
+    margin-bottom: 32px;
+    text-align: left;
+    text-shadow: 0 5px 5px var(--cor-destaque1);   
+}
+
+.card {
+    max-width: 720px;
+    width: 100%;
+    background: var(--fundo-secundario);
+    border: 0.5px solid rgba(138, 149, 171, 0.15);
+    border-radius: 6px;
+    padding: 120px 60px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 40px var(--cor-destaque1);  
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: -60px;
+    right: -60px;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(30, 95, 214, 0.25) 0%, transparent 70%);
+    filter: blur(40px);
+    pointer-events: none;
+}
+.card:hover {
+    border-color: rgba(30, 95, 214, 0.4);   
+    transform: translateY(-4px);
+}
+
+.solucao-descricao,
+.alvo-descricao {
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.75;
+    color: var(--cinza-claro);
+    position: relative;
+}
