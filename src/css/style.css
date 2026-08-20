@@ -199,8 +199,8 @@ header nav ul li a:hover {
 .solucao-descricao,
 .alvo-descricao {
     font-family: var(--font);
-    font-weight: 400;
-    font-size: 1rem;
+    font-weight: 600;
+    font-size: 1.2rem;
     line-height: 1.75;
     color: var(--cinza-claro);
     position: relative;
