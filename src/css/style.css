@@ -196,10 +196,65 @@ header nav ul li a:hover {
     transform: translateY(-4px);
 }
 
+.secao-equipe {
+    flex-direction: column;
+    align-items: center;        
+}
+
+.secao-equipe .equipe-titulo {
+    align-self: flex-start;     
+    width: 100%;
+}
+
+.secao-equipe .cards-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;    
+    gap: 32px;
+    width: 100%;
+}
+
+.secao-equipe .card {
+    max-width: none;
+    flex: 1 1 240px;           
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 0 24px rgba(11, 26, 74, 0.35);
+}
+
+.secao-equipe .card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 18px;
+    border: 2px solid rgba(30, 95, 214, 0.4);
+}
+
+.secao-equipe .card p {
+    font-family: var(--font);
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--texto-principal);
+    position: relative;
+}
+
+@media (max-width: 900px) {
+    .secao-equipe .card { flex: 1 1 calc(50% - 32px); }
+}
+
+@media (max-width: 560px) {
+    .secao-equipe .card { flex: 1 1 100%; }
+}
+
 .solucao-descricao,
 .alvo-descricao {
     font-family: var(--font);
-    font-weight: 600;
+    font-weight: 400;
     font-size: 1.2rem;
     line-height: 1.75;
     color: var(--cinza-claro);
