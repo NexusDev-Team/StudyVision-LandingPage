@@ -197,8 +197,8 @@ header nav ul li a:hover {
 }
 
 .secao-equipe {
-    flex-direction: column;
-    align-items: center;        
+    min-height: calc(100vh - 100px);  
+    justify-content: center;           
 }
 
 .secao-equipe .equipe-titulo {
@@ -213,6 +213,7 @@ header nav ul li a:hover {
     justify-content: center;    
     gap: 32px;
     width: 100%;
+    margin-top: 60px;
 }
 
 .secao-equipe .card {
@@ -259,4 +260,109 @@ header nav ul li a:hover {
     line-height: 1.75;
     color: var(--cinza-claro);
     position: relative;
+}
+
+.secao-contato {
+    align-items: center;   
+}
+
+.secao-contato .contato-titulo {
+    align-self: flex-start;   
+    width: 100%;
+}
+
+.secao-contato .contato-card {
+    max-width: 720px;
+    width: 100%;
+    background: var(--fundo-secundario);
+    border: 0.5px solid rgba(138, 149, 171, 0.15);
+    border-radius: 6px;
+    padding: 56px 60px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 40px var(--cor-destaque1);
+}
+
+.secao-contato .contato-card::before {
+    content: '';
+    position: absolute;
+    top: -60px;
+    right: -60px;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(30, 95, 214, 0.25) 0%, transparent 70%);
+    filter: blur(40px);
+    pointer-events: none;
+}
+
+.secao-contato fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    position: relative;
+}
+
+.secao-contato label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-family: var(--font);
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--texto-principal);
+}
+
+.secao-contato input[type="text"],
+.secao-contato input[type="email"],
+.secao-contato textarea {
+    background: var(--fundo-principal);
+    border: 0.5px solid rgba(138, 149, 171, 0.2);
+    border-radius: 6px;
+    padding: 14px 16px;
+    color: var(--texto-principal);
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.secao-contato input[type="text"]::placeholder,
+.secao-contato input[type="email"]::placeholder,
+.secao-contato textarea::placeholder {
+    color: var(--cinza-claro);
+}
+
+.secao-contato input[type="text"]:focus,
+.secao-contato input[type="email"]:focus,
+.secao-contato textarea:focus {
+    border-color: var(--cor-destaque2);
+    box-shadow: 0 0 16px rgba(30, 95, 214, 0.3);
+}
+
+.secao-contato textarea {
+    resize: vertical;
+    min-height: 130px;
+    font-family: var(--font);
+}
+
+.secao-contato .btn-enviar {
+    align-self: flex-start;
+    background: var(--cor-destaque2);
+    color: var(--texto-principal);
+    border: none;
+    border-radius: 6px;
+    padding: 14px 36px;
+    font-family: var(--font);
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.secao-contato .btn-enviar:hover {
+    background: var(--cor-destaque2-claro);
+    box-shadow: 0 0 24px rgba(30, 95, 214, 0.5);
+    transform: translateY(-2px);
 }
