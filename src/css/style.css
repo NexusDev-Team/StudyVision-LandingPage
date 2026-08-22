@@ -260,8 +260,8 @@ header nav ul li a:hover {
 }
 
 #videoGaleria {
-    width: 40%;
-    max-width: 300px;
+    width: 40%;             
+    max-width: 280px;       
     height: auto;
     border-radius: 6px;
     display: block;
